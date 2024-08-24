@@ -1,0 +1,104 @@
+\documentclass[12pt,a4paper]{article}
+% \documentclass[12pt,a4paper]{book}
+
+%%%%%%%%%%%%%% packages %%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage[authoryear]{natbib}
+\usepackage{url}
+\usepackage{geometry}
+\usepackage{keyval}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[table]{xcolor}
+\usepackage{makecell}
+\usepackage[none]{hyphenat}
+
+
+%%%%%%%%%%%%%% utils %%%%%%%%%%%%%%
+\graphicspath{{./images/}}
+\hypersetup{
+  colorlinks=false,
+  linkcolor=green,
+  citecolor=blue,
+  urlcolor=blue,
+  pdfborder={0 0 1}
+}
+
+% use dots instead of -
+\AtBeginDocument{
+  \def\labelitemi{$\bullet$}
+}
+\sloppy
+
+
+%%%%%%%%%%%%%% keys & commands %%%%%%%%%%%%%%
+\input{keys.tex}
+\input{commands.tex}
+
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%% first page %%%%%%%%%%%%%%
+\begin{titlepage}
+    \centering
+    \noindent
+    \begin{minipage}{0.5\textwidth} \includegraphics[width=0.5\linewidth]{logo-cs} % Ajustez le chemin et la taille
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
+    \flushright
+    \includegraphics[width=0.5\linewidth]{logo-cs}
+    \end{minipage}
+    
+    \vspace{2cm}
+    % {\Huge\bfseries Baye Malick Gning\par} \vspace{1cm} {\huge Rapport de stage\par} \vspace{2cm} {\Large \textbf{hehe\par} \vspace{2cm}
+    {\Huge\bfseries Rapport de stage\par}\vspace{2cm}
+    
+    \hrulefill
+    
+    {\Large\bfseries Title\par}
+    \hrulefill
+    
+    \vspace{0.5cm}
+    {\Large\bfseries CentraleSupélec - Université Paris Saclay / compay name\par}\vspace{0.5cm}
+    {\Large Stagiaire: \par}\vspace{0.5cm}
+    {\Large\bfseries Baye Malick GNING\par}\vspace{0.5cm}
+    {\Large Encadrants: \par}\vspace{0.5cm}
+    {\Large\bfseries encadrant 1 \& encadrant 2\par}\vspace{2cm}
+    {\Large \today \par}
+
+\end{titlepage}
+
+
+%%%%%%%%%%%%%% table of content %%%%%%%%%%%%%%
+\newpage
+\tableofcontents
+
+\input{01-introduction.tex}
+\input{02-conclusion.tex}
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%% references %%%%%%%%%%%%%%
+\newpage
+\bibliographystyle{apalike}
+\bibliography{references}
+
+
+\end{document}

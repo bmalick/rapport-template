@@ -1,0 +1,31 @@
+\newcommand{\maxhighlight}[1]{%
+    \textbf{#1}
+}
+
+\newcommand{\makeimage}[2]{
+    \setkeys{imagekwargs}{#1}
+    \begin{figure}[#2]
+    % \begin{figure}[H]
+      \centering
+      \includegraphics[width=\imagekwargs@width\linewidth]{{{\imagekwargs@path}}}
+      \caption{\imagekwargs@caption}
+      \label{fig:\imagekwargs@ref}
+    \end{figure}
+    % \vspace{-1em}
+}
+
+
+\newcommand{\makemetrictable}[6]{
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            accuracy & #1\\ \hline
+            précision & #2\\ \hline
+            rappel & #3\\ \hline
+            F1 & #4 \\ \hline
+        \end{tabular}
+    \caption{#5}
+    \label{tab:#6}
+    \end{table}
+}
