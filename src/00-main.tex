@@ -22,7 +22,7 @@
 
 
 %%%%%%%%%%%%%% utils %%%%%%%%%%%%%%
-\graphicspath{{./images/}}
+\graphicspath{{./src/images/}}
 \hypersetup{
   colorlinks=false,
   linkcolor=green,
@@ -39,8 +39,8 @@
 
 
 %%%%%%%%%%%%%% keys & commands %%%%%%%%%%%%%%
-\input{keys.tex}
-\input{commands.tex}
+\input{./src/keys.tex}
+\input{./src/commands.tex}
 
 
 
@@ -51,11 +51,11 @@
 \begin{titlepage}
     \centering
     \noindent
-    \begin{minipage}{0.5\textwidth} \includegraphics[width=0.5\linewidth]{logo-cs} % Ajustez le chemin et la taille
+    \begin{minipage}{0.5\textwidth} \includegraphics[width=0.5\linewidth]{./images/logo-cs} % Ajustez le chemin et la taille
     \end{minipage}\hfill
     \begin{minipage}{0.5\textwidth}
     \flushright
-    \includegraphics[width=0.5\linewidth]{logo-cs}
+    \includegraphics[width=0.5\linewidth]{./images/logo-cs}
     \end{minipage}
     
     \vspace{2cm}
@@ -82,8 +82,8 @@
 \newpage
 \tableofcontents
 
-\input{01-introduction.tex}
-\input{02-conclusion.tex}
+\input{./src/01-introduction.tex}
+\input{./src/02-conclusion.tex}
 
 
 
@@ -98,7 +98,7 @@
 %%%%%%%%%%%%%% references %%%%%%%%%%%%%%
 \newpage
 \bibliographystyle{apalike}
-\bibliography{references}
+\bibliography{./src/references}
 
 
 \end{document}
