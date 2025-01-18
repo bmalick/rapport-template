@@ -11,3 +11,7 @@ compile:
 
 clean:
 	@rm -r report
+
+new-project:
+	@mkdir $(name)
+	@cp -r src images Makefile $(name)
